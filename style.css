@@ -3,15 +3,13 @@
 }
 
 header {
-    background-color: #DC920a;
+    background-color: #faac1b;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 100px;
     padding: 20px;
-
-
 }
 
 .titulo {
@@ -29,8 +27,22 @@ header {
 main {
     margin: 0px;
     padding: 30px;
-    background-color: #050524;
-    height: 76vh;
+    background-color: #fad887;
+    min-height: 76vh;
+}
+
+.efeito {
+    /* position: relative; */
+}
+
+.efeito img {
+    width: 900px;
+}
+
+.efeito h1 {
+    position: absolute;
+    top: 460px;
+    left: 340px;
 }
 
 video {
@@ -43,22 +55,31 @@ img {
     width: 560px;
 }
 
-a:visited {
-    color: #99211D;
+a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14pt;
 }
- container {
-    margin: 10px;
-    color: #e7ac08;
- }
 
- container h1 {
+a:visited {
+    color: #9c0d08;
+}
+ nav ul li {
+    margin: 0 10px
+ }
+container {
+    margin: 10px;
+    color: #402301;
+}
+
+container h1 {
     margin-top: 6px;
     margin-bottom: 12px;
- }
+}
 
- p {
+p {
     line-height: 1.5;
- }
+}
 
 artigos {
     display: flex;
@@ -71,7 +92,7 @@ article {
     text-align: justify;
     color: #e9dcdb;
     margin: 5rem 2rem;
-    box-shadow: 0px 0px 10px  #d89a25;
+    box-shadow: 0px 0px 10px #d89a25;
     padding: 2rem 2rem;
     border-radius: 10px;
     background-color: #000000;
@@ -83,7 +104,7 @@ article h1 {
     margin: 3%;
     text-align: center;
     font-size: 30pt;
-    color: #a11510;
+    color: #9b0909;
 }
 
 /* Mobile */
@@ -108,7 +129,7 @@ article h1 {
         width: 60%;
         margin: auto;
         display: block;
-        
+
     }
 
     iframe {
@@ -121,7 +142,7 @@ article h1 {
     }
 
     .container {
-        color: #dc920a;
+        color: #d58d07;
     }
 
 }
