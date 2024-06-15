@@ -64,9 +64,11 @@ a {
 a:visited {
     color: #9c0d08;
 }
- nav ul li {
+
+nav ul li {
     margin: 0 10px
- }
+}
+
 container {
     margin: 10px;
     color: #402301;
@@ -100,12 +102,51 @@ article {
 
 }
 
+.caixa-pesquisa {
+    font-size: 27pt;
+}
+
 article h1 {
     margin: 3%;
     text-align: center;
     font-size: 30pt;
     color: #9b0909;
 }
+
+#termo{
+    font-size: 20pt;
+}
+
+.btn-artigo {
+    font-size: 77pt;
+    border: none;
+    color: rgb(245, 241, 241);
+    background-color: #0d0454;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+
+.btn-eliminar {
+    border: none;
+    color: #f6b8b8;
+    background-color: #cb0707;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12pt;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+input.btn-artigo {
+    font-size: 12pt;
+}
+
 
 /* Mobile */
 @media screen and (max-width: 1024px) {
