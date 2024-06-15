@@ -6,6 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sons do Cinema</title>
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        //funçao para buscar o texto dentro do artigo
+        function buscarTexto() {
+            let termo = document.querySelector('#termo').value
+            const articles = document.querySelectorAll('article'); // Seleciona todos os elementos <article>
+
+            //ForEach em portugues Para Cada (artigo)
+            articles.forEach((article) => {
+                //Aqui vamos coverter todo o texto em minusculo para nao ter diferença entre a escrita
+                const texto = article.textContent.toLowerCase(); // Obtém o texto do <article> em minúsculas
+
+                //IF em pt SE - se o texto incluir o termo buscado
+                if (texto.includes(termo.toLowerCase())) {
+
+                    article.style.display = 'block'; //Exibir o artigo
+                }
+                //Else em pt Se Não - se nao encontrar 
+                else {
+                    article.style.display = 'none'; //escondemos o artigo
+                }
+            });
+        }
+
+
+        //funçao para exibir todos os artigos novamente
+        function limparFiltroDePesquisa() {
+            const articles = document.querySelectorAll('article'); // Seleciona todos os elementos <article>
+            document.querySelector('#termo').value = ''
+            //ForEach em portugues Para Cada (artigo)
+            articles.forEach((article) => {
+
+                //Mudar o estilo do display para block
+                article.style.display = 'block'
+            });
+
+        }
+
+
+
+    </script>
 </head>
 
 <body>
@@ -20,7 +61,15 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <div class="caixa-pesquisa">
+            <label for="gsearch">Detetive:</label>
+            <input type="text" id="termo" name="gsearch">
+            <input class="btn-artigo" type="submit" value="Encontrar artigo" onclick="buscarTexto()">
+            <button class="btn-eliminar" onclick="limparFiltroDePesquisa()">Eliminar</button>
+
+        </div>
         <artigos>
 
             <article>
@@ -450,7 +499,7 @@
                 </p>
                 <img src="/SonsDoCinema/assets/U.png" alt="UNITED ARTISTS">
             </article>
-            
+
             <article>
                 <h1>FLEISCHER STUDIOS</h1>
 
