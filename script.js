@@ -57,3 +57,9 @@ setTimeout(() => {
   deslizarEsquerda(cortinaE);
   deslizarDireita(cortinaD);
 }, 700);
+
+setTimeout(() => {
+    
+    cortinaD.remove()
+    cortinaE.remove();
+  }, 3000);
