@@ -3,7 +3,12 @@
     padding: 0;
 }
 
-#cortinasE,#cortinasD {
+body {
+    /* overflow: hidden; */
+}
+
+#cortinasE,
+#cortinasD {
     position: absolute;
     margin: 0;
     margin-top: -5px;
@@ -17,18 +22,18 @@
 /* Estilos para as cortinas */
 #cortinasE,
 #cortinasD {
-  position: absolute;
-  top: 0;
-  transition: left 3s ease-out, right 3s ease-out;
+    position: absolute;
+    top: 0;
+    transition: left 3s ease-out, right 3s ease-out;
 }
 
 /* Posição inicial das cortinas */
 #cortinasE {
-  left: 0;
+    left: 0;
 }
 
 #cortinasD {
-  right: 0;
+    right: 0;
 }
 
 header {
@@ -142,7 +147,7 @@ article h1 {
     color: #9b0909;
 }
 
-#termo{
+#termo {
     font-size: 20pt;
 }
 
@@ -172,6 +177,7 @@ article h1 {
     margin: 2px 1px;
     cursor: pointer;
 }
+
 input.btn-artigo {
     font-size: 12pt;
 }
